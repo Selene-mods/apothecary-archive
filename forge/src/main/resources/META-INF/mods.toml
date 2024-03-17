@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "apothecary"
+version = "${version}"
+displayName = "Apothecary"
+authors = "Ninjdai, LunarSakura"
+description = '''
+Introduce apothecary to your game ! Medieval plants, brews and illnesses
+'''
+#logoFile = ""
+
+[[dependencies.apothecary]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.apothecary]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.apothecary]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.1.12,)"
+ordering = "AFTER"
+side = "BOTH"

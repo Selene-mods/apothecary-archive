@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "apothecary",
+  "version": "${version}",
+  "name": "Apothecary",
+  "description": "Introduce apothecary to your game ! Medieval plants, brews and illnesses",
+  "authors": [
+    "Ninjdai",
+    "LunarSakura"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/apothecary/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.selene.apothecary.fabric.ApothecaryFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}
