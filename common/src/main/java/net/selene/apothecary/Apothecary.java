@@ -1,19 +1,11 @@
 package net.selene.apothecary;
 
 import com.google.common.base.Suppliers;
-import dev.architectury.platform.Mod;
-import dev.architectury.registry.CreativeTabRegistry;
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrarManager;
-import dev.architectury.registry.registries.RegistrySupplier;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.selene.apothecary.block.ModBlocks;
-import net.selene.apothecary.item.ModItemGroups;
-import net.selene.apothecary.item.ModItems;
+import net.selene.apothecary.registry.BlockEntityTypeRegistry;
+import net.selene.apothecary.registry.ObjectRegistry;
+import net.selene.apothecary.registry.SoundEventRegistry;
+import net.selene.apothecary.registry.TabRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,9 +20,11 @@ public class Apothecary {
     // Registering a new creative tab
     
     public static void init() {
-        ModBlocks.registerModBLocks();
-        ModItems.registerModItems();
-        ModItemGroups.registerItemGroups();
+        ObjectRegistry.init();
+        TabRegistry.init();
+        BlockEntityTypeRegistry.init();
+        SoundEventRegistry.init();
+
         
         System.out.println(ApothecaryExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }

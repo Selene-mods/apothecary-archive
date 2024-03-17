@@ -4,6 +4,8 @@
   "item.apothecary.mandrake": "Mandrake",
 
   "block.apothecary.ingredients_shelf": "Ingredients Shelf",
+  "block.apothecary.potion_shelf": "Potion Shelf",
+  "block.apothecary.mixed_shelf": "Mixed Shelf",
 
-  "itemGroup.apothecary.tab": "Apothecary"
+  "creativetab.apothecary.tab": "Apothecary"
 }

@@ -1,0 +1,14 @@
+{
+  "shelf_open": {
+    "subtitle": "apothecary.sound.shelf_open",
+    "sounds": [
+      "apothecary:block/shelf_open"
+    ]
+  },
+  "shelf_close": {
+    "subtitle": "apothecary.sound.shelf_close",
+    "sounds": [
+      "apothecary:block/shelf_close"
+    ]
+  }
+}
